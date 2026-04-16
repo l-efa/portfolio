@@ -456,6 +456,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
   /*
   display: flex;
   background-color: grey;
@@ -479,7 +480,7 @@ body {
 }
 
 .some-box:active {
-  width: 125px;
+  transform: scale(0.92);
 }
 
 .github {

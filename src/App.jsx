@@ -1,10 +1,10 @@
 import { motion, spring, useScroll } from "motion/react";
-import profilePicture from "./assets/bug.jpg";
 import profilePicture2 from "./assets/profiilikuva2.png";
 import koi from "./assets/koi.png";
 import moodiary from "./assets/proju2.png";
 import hobbly from "./assets/proju3.png";
 import idle from "./assets/idle.png";
+import forestai from "./assets/forestai.png";
 import noimage from "./assets/noimage.jpg";
 import reactIcon from "./assets/react.svg";
 import htmlIcon from "./assets/html.svg";
@@ -320,19 +320,27 @@ function App() {
               <motion.a
                 className="some-box"
                 href="https://www.github.com/l-efa"
+                target="_blank"
+                rel="noopener noreferrer"
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
+                whileTap={{ scale: 0.92, transition: { duration: 0.1, delay: 0 } }}
                 transition={{ duration: 0.4, delay: 1.1 }}
               >
                 <FontAwesomeIcon className="github" icon={faGithub} />
               </motion.a>
               <motion.a
                 className="some-box"
-                href="/"
+                href="https://www.linkedin.com/in/leevi-sahi-1267883b5"
+                target="_blank"
+                rel="noopener noreferrer"
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
+                whileTap={{ scale: 0.92, transition: { duration: 0.1, delay: 0 } }}
                 transition={{ duration: 0.4, delay: 1.15 }}
-              ></motion.a>
+              >
+                <FontAwesomeIcon className="linkedin" icon={faLinkedin} />
+              </motion.a>
             </div>
           </article>
         </section>
@@ -552,6 +560,15 @@ function App() {
                     <div>Express</div>
                     <div>MongoDB</div>
                   </div>
+                  <a
+                    href="https://github.com/MillaMirjami/ryhmaprojekti/tree/moodiary"
+                    className="repo-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon className="github2" icon={faGithub} />
+                    {t("projects-code")}
+                  </a>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
@@ -569,8 +586,10 @@ function App() {
                     <div>MongoDB</div>
                   </div>
                   <a
-                    href="https://github.com/PaiSillanpaa/hobby-app"
+                    href="https://github.com/PaiSillanpaa/hobby-app/tree/julkaisu"
                     className="repo-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FontAwesomeIcon className="github2" icon={faGithub} />
                     {t("projects-code")}
@@ -591,6 +610,42 @@ function App() {
                     <div>Express</div>
                     <div>PostgreSQL</div>
                   </div>
+                  <a
+                    href="https://github.com/l-efa/idle"
+                    className="repo-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon className="github2" icon={faGithub} />
+                    {t("projects-code")}
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={noimage}
+                  alt="portfolio"
+                  className="slider-idle slider-item"
+                />
+                <div className="slider-desc">
+                  <h3 className="desc-header">{t("projects-8header")}</h3>
+                  <p className="desc-text">{t("projects-8desc")}</p>
+                  <div className="desc-tags">
+                    <div>React</div>
+                    <div>Vite</div>
+                    <div>CSS</div>
+                    <div>Motion</div>
+                    <div>Swiper</div>
+                  </div>
+                  <a
+                    href="https://github.com/l-efa/portfolio"
+                    className="repo-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon className="github2" icon={faGithub} />
+                    {t("projects-code")}
+                  </a>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
@@ -630,6 +685,35 @@ function App() {
                     <div>Javascript</div>
                     <div>Google cloud run</div>
                   </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src={forestai}
+                  alt="forestai"
+                  className="slider-idle slider-item"
+                />
+                <div className="slider-desc">
+                  <h3 className="desc-header">{t("projects-7header")}</h3>
+                  <p className="desc-text">{t("projects-7desc")}</p>
+                  <div className="desc-tags">
+                    <div>React</div>
+                    <div>Node</div>
+                    <div>Express</div>
+                    <div>Typescript</div>
+                    <div>Prisma</div>
+                    <div>PostgreSQL</div>
+                    <div>Tailwind</div>
+                  </div>
+                  <a
+                    href="https://github.com/l-efa/forestai"
+                    className="repo-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon className="github2" icon={faGithub} />
+                    {t("projects-code")}
+                  </a>
                 </div>
               </SwiperSlide>
             </Swiper>
